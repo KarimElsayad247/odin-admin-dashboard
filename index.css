@@ -5,10 +5,10 @@
 
 body {
     min-height: 100vh;
-    background-color: #e2e8f0;
+    background-color: rgb(226, 232, 240);
     display: grid;
     grid-template-columns: minmax(max-content, 1fr) 4fr;
-    grid-template-rows: min-content auto;
+    grid-template-rows: 1fr;
 
     font-family: sans-serif, Arial, Helvetica;
 }
@@ -60,3 +60,114 @@ body {
     text-decoration: none;
     color: white;
 }
+
+.content {
+    display: grid;
+    grid-template-rows: min-content min-content auto;
+}
+
+header {
+    background-color: white;
+    padding: 0.2rem 3em;
+    box-shadow: 0 3px 3px rgba(203, 203, 203, 0.9);
+}
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr min-content min-content max-content;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.search {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 3rem;
+}
+
+.searchbar {
+    border-radius: 20px;
+    border: none;
+    background-color: #e2e8f0;
+    flex: 1;
+    padding: 0.2rem 0;
+    text-indent: 1rem;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+}
+
+.mdi-bell-ring-outline {
+    font-size: 1.2em;
+}
+
+.profile--name {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.profile--picture {
+    border-radius: 50%;
+}
+
+.navbar .profile--picture {
+    width: 40px;
+}
+
+.toolbar .profile--picture {
+    width: 60px;
+}
+
+.greeting {
+    margin-right: auto;
+}
+
+.greeting .hello {
+    font-size: 0.6rem;
+}
+
+.greeting .username {
+    font-size: 0.8rem;
+}
+
+.buttons-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons-group button {
+    background-color: #1992d4;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem;
+    min-width: 5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in;
+}
+
+.buttons-group button:hover {
+    background-color: #106d9f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
